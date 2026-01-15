@@ -1,0 +1,24 @@
+cabal-version:       2.2
+name:                bug-crush
+version:             0.1.0.0
+build-type:          Simple
+
+author:              Ana Paula Soares Tôrres Cassimiro,
+                     Ariany da Silva de Macena,
+                     Maria Eduarda Ramos Lucena Maia,
+                     Yasmim Dantas da Costa Souza
+
+extra-source-files:
+    README.md
+
+executable bug-crush
+  main-is:            Main.hs
+  hs-source-dirs:
+      app
+      src
+  ghc-options:
+      -Wall
+  build-depends:
+      base >=4.7 && <5,
+      random
+  default-language:  Haskell2010
