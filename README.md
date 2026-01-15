@@ -3,7 +3,7 @@
 
 Caro desenvolvedor de software, está cansado de encontrar bugs profissionalmente e agora quer se dedicar a capturá-los por diversão? Este jogo é para você!
 
-Aqui, você vai ter a experiênciade 'Candy Crush' e vários outros jogos de combinação - mas dessa vez, no terminal!
+Aqui, você vai ter a experiência de 'Candy Crush' e vários outros jogos de combinação - mas dessa vez, no terminal!
 
 ---
 
