@@ -16,8 +16,9 @@ printBoard :: Board -> IO ()
 printBoard board = do
     putStr "\ESC[2J\ESC[H" -- Limpa tela
     putStrLn "   0 1 2 3 4 5 6 7"
-    putStrLn "  -----------------"
+    putStrLn "   ----------------"
     printRows board 0
+    putStrLn "   ----------------"
 
 printRows :: Board -> Int -> IO ()
 printRows [] _ = return ()

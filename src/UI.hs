@@ -96,9 +96,16 @@ instructionsScreen :: IO ()
 instructionsScreen = do
     clearScreen
     putStrLn "===== INSTRUÇÕES ====="
-    putStrLn "Digite as coordenadas das peças para trocar suas posições."
-    putStrLn "Formato: linha1 coluna1 linha2 coluna2"
-    putStrLn "Exemplo: 1 2 1 3"
+    putStrLn "Digite as coordenadas das peças e a direção do movimento para trocar suas posições."
+    putStrLn ""
+    putStrLn "Os comandos para as direções funcionam da seguinte maneira:"
+    putStrLn " - w: mover a peça para cima"
+    putStrLn " - a: mover a peça para a esquerda"
+    putStrLn " - s: mover a peça para baixo"
+    putStrLn " - d: mover a peça para a direita"
+    putStrLn ""
+    putStrLn "Formato: linha coluna direção"
+    putStrLn "Exemplo: 1 2 w"
     putStrLn ""
     putStrLn "Pressione [ENTER] para retornar ao Menu Inicial"
     _ <- getLine
@@ -123,13 +130,9 @@ formatLine label value =
 --ainda esteja sendo implementada no módulo de lógica
 renderHUD :: String -> Int -> Int -> IO ()
 renderHUD name points movements = do
+    putStrLn ""
+    putStrLn ""
     putStrLn $ "╔" ++ replicate (boxWidth + 2) '═' ++ "╗"
-    
-    let titulo = "BUG CRUSH"
-    let padTit = replicate ((boxWidth - length titulo) `div` 2) ' '
-    
-    putStrLn $ "║ " ++ padTit ++ titulo ++ padTit ++ "  ║" 
-    putStrLn $ "╠" ++ replicate (boxWidth + 2) '═' ++ "╣"
     putStrLn $ formatLine "Jogador: " name
     putStrLn $ formatLine "Pontos:  " (show points)
     putStrLn $ formatLine "Movimentos Restantes: " (show movements) 

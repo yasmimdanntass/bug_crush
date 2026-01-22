@@ -105,8 +105,8 @@ gameLoop name points movements board = do
         else do
             -- 2. Renderiza a Interface
             clearScreen
-            renderHUD name points movements
             printBoard board
+            renderHUD name points movements
             
             -- 3. Pede Input
             input <- getUserInput
