@@ -12,7 +12,7 @@ Aqui, você vai ter a experiência de 'Candy Crush' e vários outros jogos de co
 * Digite a **linha**, a **coluna**, e **w a s d** para os movimentos;
 * Ex.: ``1 2 s`` (desloca a peça da linha 1 e coluna 2 para baixo);
 
-Seu objetivo é atingir **500 pontos** com o mínimo de jogadas possível, num máximo de 10! Para isso, combine as peças em pelo menos trios e planeje combos para aumentar seus multiplicadores.
+Seu objetivo é atingir **500 pontos** com o mínimo de jogadas possível, num máximo de 15! Para isso, combine as peças em pelo menos trios e planeje combos para aumentar seus multiplicadores.
 
 Boa sorte!
 
