@@ -85,11 +85,12 @@ rulesScreen = do
     putStrLn "1-Troque duas peças vizinhas na horizontal ou na vertical."
     putStrLn "2-Forme combinações de 3 ou mais peças iguais."
     putStrLn "3-Cada troca consome um movimento."
-    putStrLn "4-A fase termina quando os movimentos acabam ou quando o objetivo do nível for alcançado."
+    putStrLn "4-A fase termina quando os movimentos acabam ou quando o jogador decide sair."
+    putStrLn "5-O jogador vence quando atinge 500 pontos."
     putStrLn ""
     putStrLn "Pressione [ENTER] para retornar ao Menu Inicial"
     _ <- getLine
-    return ()
+    return ()   
 
 --5. Exibe as instruções de como o jogador pode realizar uma combinação
 instructionsScreen :: IO ()
